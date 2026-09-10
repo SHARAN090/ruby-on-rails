@@ -1,0 +1,47 @@
+<h1>Edit Task</h1>
+
+<%= form_with model: @task do |form| %>
+
+  <div>
+    <%= form.label :name, "Task Name" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.label :description, "Description" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.label :due_date, "Due Date" %>
+    <%= form.date_field :due_date %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.label :priority, "Priority" %>
+    <%= form.select :priority, ["Low", "Medium", "High"] %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.label :status, "Status" %>
+    <%= form.select :status, ["Pending", "In Progress", "Completed"] %>
+  </div>
+
+  <br>
+
+  <%= form.submit "Update Task" %>
+
+<% end %>
+
+<br>
+
+
+<%= link_to "Back to Tasks", tasks_path %>
