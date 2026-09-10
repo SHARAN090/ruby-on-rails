@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<<<<<<< HEAD
+=======
+# Task_Management_System
+>>>>>>> 85cd8c78c2ace4d1feda77b6ae64b7c31abe8637
+# ruby-on-rails
